@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VacationDecider</string>
+    <string-array name="items">
+        <item>Sverige</item>
+        <item>Tyskland</item>
+        <item>USA</item>
+        <item>Spania</item>
+        <item>Tyrkia</item>
+    </string-array>
+</resources>
