@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
         Drawable Tyskland = getResources().getDrawable((R.drawable.tsk));
         Drawable USA = getResources().getDrawable((R.drawable.usd));
         Cities sverigehotell = new Cities("Stockholm", "SvenskeHotel", Sverige, "SEK", 1.02, 400, 700);
-        Cities spaniahotell = new Cities("Madrid", "SpaniaHotel", Spania, "Euro", 9.57, 300, 800);
-        Cities tyrkiahotell = new Cities("Ankara", "TyrkiaHotel", Tyrkia, "Tyrkisk lira", 2.05, 200, 900);
-        Cities tysklandhotell = new Cities("Berlin", "TysklandHotel", Tyskland, "Euro", 9.57, 500, 1000);
-        Cities USAhotell = new Cities("Washington D.C", "USAHotel", USA, "USD", 7.7, 300, 1200);
+        Cities spaniahotell = new Cities("Madrid", "SpaniaHotel", Spania, "Euro", 0.1, 300, 800);
+        Cities tyrkiahotell = new Cities("Ankara", "TyrkiaHotel", Tyrkia, "Tyrkisk lira", 0.48, 200, 900);
+        Cities tysklandhotell = new Cities("Berlin", "TysklandHotel", Tyskland, "Euro", 0.1, 500, 1000);
+        Cities USAhotell = new Cities("Washington D.C", "USAHotel", USA, "USD", 0.13, 300, 1200);
 
         land.add(sverigehotell);
         land.add(tysklandhotell);

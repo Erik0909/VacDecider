@@ -59,7 +59,7 @@ public class Main2Activity extends AppCompatActivity  {
         txtHotel.setText(land.getHotel());
         txtCurrency.setText(land.getCurrency());
         double currValue = land.getCurrencyValue();
-        double currConv = (100 / currValue);
+        double currConv = (100 * currValue);
         txtCurrencyValue.setText("100 NOK to " + land.getCurrency() + " = " + format.format(currConv));
 
 
