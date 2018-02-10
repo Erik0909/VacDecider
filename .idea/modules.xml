@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/VacationDecider.iml" filepath="$PROJECT_DIR$/VacationDecider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VacDecider.iml" filepath="$PROJECT_DIR$/VacDecider.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

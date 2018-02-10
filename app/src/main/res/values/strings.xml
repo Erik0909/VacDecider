@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">VacationDecider</string>
+    <string name="txtChoose_Country">Choose Country:</string>
+    <string name="txtCity">City:</string>
+    <string name="txtHotel">Hotel:</string>
+    <string name="btnCalcCost">CALCULATE COST</string>
+    <string name="txtVacDecider">Vacation Decider</string>
+    <string name="txtNumDays">Num. Days:</string>
+    <string name="txtHotel2">Hotel:</string>
+    <string name="txtCurrency">Currency:</string>
+    <string name="txtPrice">Price:</string>
     <string-array name="items">
         <item>Sverige</item>
         <item>Tyskland</item>
