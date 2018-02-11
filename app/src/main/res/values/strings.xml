@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">VacationDecider</string>
     <string name="txtChoose_Country">Choose Country:</string>
-    <string name="txtCity">City:</string>
+    <string name="txtCity">Capital:</string>
     <string name="txtHotel">Hotel:</string>
     <string name="btnCalcCost">CALCULATE COST</string>
     <string name="txtVacDecider">Vacation Decider</string>

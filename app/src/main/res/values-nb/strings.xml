@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VacationDecider</string>
+    <string name="txtChoose_Country">Velg land:</string>
+    <string name="txtCity">Hovedstad: </string>
+    <string name="txtHotel">Hotell: </string>
+    <string name="btnCalcCost">KALKULER</string>
+    <string name="txtVacDecider">Ferieplanlegger</string>
+    <string name="txtNumDays">"Ant. Dager: "</string>
+    <string name="txtHotel2">"Hotell: "</string>
+    <string name="txtCurrency">Valuta:</string>
+    <string name="txtPrice">"Pris: "</string>
+</resources>
