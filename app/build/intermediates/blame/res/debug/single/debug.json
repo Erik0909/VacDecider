@@ -452,6 +452,10 @@
         "source": "C:\\Users\\Erik\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\c10460ae70476978ccab1465b96330a7\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
+        "merged": "C:\\Projects\\VacDecider\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_1.jpg.flat",
+        "source": "C:\\Projects\\VacDecider\\app\\src\\main\\res\\drawable\\background_1.jpg"
+    },
+    {
         "merged": "C:\\Applikasjoner\\VacationDecider\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Erik_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\acce5cdc4e7e156ed265e9bf496c17a4\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
