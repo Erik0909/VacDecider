@@ -1,16 +1,11 @@
 package erik.vacationdecider;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.NumberPicker;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.io.Serializable;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
 
 public class Main2Activity extends AppCompatActivity  {
     //Variables
@@ -29,8 +24,8 @@ public class Main2Activity extends AppCompatActivity  {
         final TextView txtPris = (TextView)findViewById(R.id.txtPris);
 
         //Intent
-        Intent i = getIntent();
         final Cities land = (Cities) getIntent().getSerializableExtra(("List"));
+
 
         //Number picker 1
         noPicker = (NumberPicker)findViewById(R.id.numberPicker);
@@ -49,10 +44,6 @@ public class Main2Activity extends AppCompatActivity  {
 
             }
         });
-
-
-
-
 
         //Updates strings
         txtCity.setText(land.getCity());
