@@ -22,7 +22,6 @@ public class CurrencyValueModel {
             currValues.mTRY = values.getDouble("TRY");
             currValues.mSEK = values.getDouble("SEK");
 
-
             return currValues;
 
         } catch (JSONException e) {
@@ -47,6 +46,21 @@ public class CurrencyValueModel {
         return mEUR;
     }
 
+    public void setUSD(double USD) {
+        mUSD = USD;
+    }
+
+    public void setTRY(double TRY) {
+        mTRY = TRY;
+    }
+
+    public void setSEK(double SEK) {
+        mSEK = SEK;
+    }
+
+    public void setEUR(double EUR) {
+        mEUR = EUR;
+    }
 
     @Override
     public String toString() {

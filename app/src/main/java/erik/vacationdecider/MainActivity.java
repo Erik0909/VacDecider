@@ -17,6 +17,8 @@ import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import org.json.JSONObject;
 import java.util.ArrayList;
+import java.util.Arrays;
+
 import cz.msebera.android.httpclient.Header;
 
 
@@ -30,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
     double usd, sek, eur, TRY = 0;
     //Inserting objects and adding drawables
     private void populateObjects(CurrencyValueModel currValues) {
-
         //Getting currency values from CurrencyValueModels JSON
         usd = currValues.getUSD();
         sek = currValues.getSEK();
@@ -103,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        letsDoSomeNetworking();
         //Button onClick method (Redirects to new Activity with the selected country object)
         Button yourButton = (Button) findViewById(R.id.btnCalc);
         yourButton.setOnClickListener(new View.OnClickListener(){
@@ -116,24 +116,32 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    protected void onResume() {
+        super.onResume();
+        letsDoSomeNetworking();
+    }
+
 
 
     //Trying to fetch JSON Currency values
     private void letsDoSomeNetworking() {
         // AsyncHttpClient belongs to the loopj dependency.
         AsyncHttpClient client = new AsyncHttpClient();
-
         // Making an HTTP GET request by providing a URL and the parameters.
         client.get(URL, new JsonHttpResponseHandler() {
-
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 Log.d("JSON", "Success! JSON: " + response.toString());
                CurrencyValueModel currValues = CurrencyValueModel.fromJson(response);
-               populateObjects(currValues);
+               if(land.isEmpty()) {
+                   Log.d("Currency", "If");
 
+                   populateObjects(currValues);
+               } else {
+                   Log.d("Currency", "Else");
+                   updateCurrencyValues(currValues);
+               }
             }
-
             @Override
             public void onFailure(int statusCode, Header[] headers, Throwable e, JSONObject response) {
 
@@ -146,6 +154,36 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+    }
+
+    public void updateCurrencyValues(CurrencyValueModel currValues) {
+        usd = currValues.getUSD();
+        TRY = currValues.getTRY();
+        eur = currValues.getEUR();
+        sek = currValues.getSEK();
+
+//        land.add(sverigehotell);
+//        land.add(tysklandhotell);
+//        land.add(USAhotell);
+//
+//        land.add(spaniahotell);
+//        land.add(tyrkiahotell);
+
+        land.get(0).setCurrencyValue(sek);
+        Log.d("Currency", "Sverige: " + land.get(0).getCurrencyValue() + " " + land.get(0).getCity());
+        land.get(1).setCurrencyValue(eur);
+        Log.d("Currency", "Tysk: " + land.get(1).getCurrencyValue()+ " " + land.get(1).getCity());
+
+        land.get(2).setCurrencyValue(usd);
+        Log.d("Currency", "USA: " + land.get(2).getCurrencyValue() + " " + land.get(2).getCity());
+
+        land.get(3).setCurrencyValue(eur);
+        Log.d("Currency", "Spania: " + land.get(3).getCurrencyValue() + " " + land.get(3).getCity());
+
+        land.get(4).setCurrencyValue(TRY);
+        Log.d("Currency", "Tyrkia: " + land.get(4).getCurrencyValue() + " " + land.get(4).getCity());
+
+
     }
 
 

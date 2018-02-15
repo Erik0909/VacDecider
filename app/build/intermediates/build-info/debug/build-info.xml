@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
+    abi="x86"
     api-level="26"
     build-mode="COLD"
-    density="xxxhdpi"
+    density="420dpi"
     format="10"
-    ir-eligibility="FIELD_REMOVED"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.0.1"
-    timestamp="1518546007046"
+    timestamp="1518620770609"
     token="-2085416409833804664"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="181" />
+        duration="141" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="38" />
+        duration="31" />
     <task
         name="verifier"
-        duration="15" />
+        duration="4" />
 
     <artifact
         location="C:\Projects\VacDecider\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
@@ -30,8 +30,11 @@
 
     <build
         build-mode="FULL"
-        timestamp="1518543993959"
+        timestamp="1518619591804"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Projects\VacDecider\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
         <artifact
             location="C:\Projects\VacDecider\app\build\outputs\apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
@@ -43,9 +46,6 @@
             type="SPLIT" />
         <artifact
             location="C:\Projects\VacDecider\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Projects\VacDecider\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="C:\Projects\VacDecider\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
@@ -71,8 +71,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="FIELD_REMOVED"
-        timestamp="1518546007046"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1518620770609"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Projects\VacDecider\app\build\intermediates\split-apk\debug\slices\slice_0.apk"

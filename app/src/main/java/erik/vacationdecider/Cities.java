@@ -55,6 +55,9 @@ public class Cities implements Serializable {
         return airplaneCost;
     }
 
+    public void setCurrencyValue(Double currencyValue) {
+        this.currencyValue = currencyValue;
+    }
 
     @Override
     public String toString() {
